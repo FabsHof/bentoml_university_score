@@ -1,28 +1,19 @@
-# Examen BentoML
+# 🍱 BentoML - University Score
 
-Ce repertoire contient l'architecture basique afin de rendre l'évaluation pour l'examen BentoML.
+This repository contains a BentoML service that predicts the likelihood of student admission to a university based on various features.
 
-Vous êtes libres d'ajouter d'autres dossiers ou fichiers si vous jugez utile de le faire.
+## 📊 Data:
 
-Voici comment est construit le dossier de rendu de l'examen:
+- **GRE Score**: Score obtained on the GRE test (scored out of 340)
+- **TOEFL Score**: Score obtained on the TOEFL test (scored out of 120)
+- **University Rating**: University rating (scored out of 5)
+- **SOP**: Statement of Purpose (scored out of 5)
+- **LOR**: Letter of Recommendation (scored out of 5)
+- **CGPA**: Cumulative Grade Point Average (scored out of 10)
+- **Research**: Research experience (0 or 1)
+- **Chance of Admit**: Chance of admission (scored out of 1)
 
-```bash       
-├── examen_bentoml          
-│   ├── data       
-│   │   ├── processed      
-│   │   └── raw           
-│   ├── models      
-│   ├── src       
-│   └── README.md
-```
-
-Afin de pouvoir commencer le projet vous devez suivre les étapes suivantes:
-
-- Forker le projet sur votre compte github
-
-- Cloner le projet sur votre machine
-
-- Récuperer le jeu de données à partir du lien suivant: [Lien de téléchargement]( https://datascientest.s3-eu-west-1.amazonaws.com/examen_bentoml/admissions.csv)
+## 📦 Installation
 
 
-Bon travail!
+
