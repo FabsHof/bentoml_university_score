@@ -26,6 +26,5 @@ def main() -> None:
     file_path = path.join(os.getcwd(), 'data', 'raw', file_name)
     load_data(url, file_path)
 
-
 if __name__ == "__main__":
     main()
