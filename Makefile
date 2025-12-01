@@ -10,3 +10,7 @@ train_model:
 	@echo "⏳ Training model..."
 	@python src/model/train_model.py
 	@echo "✅ Model training complete."
+start_api:
+	@echo "⏳ Starting BentoML API server..."
+	@bentoml serve src.service:UniversityAdmissionService
+	@echo "✅ BentoML API server started."

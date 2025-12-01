@@ -15,5 +15,22 @@ This repository contains a BentoML service that predicts the likelihood of stude
 
 ## 📦 Installation
 
+1. Install uv: https://docs.astral.sh/uv/getting-started/installation/
+2. Get dependencies and activate the virtual environment:
+
+   ````
+    uv sync
+    source .venv/bin/activate
+   ````
+ ## 🚀 Usage
+
+Use the Makefile to prepare data, train the model, and start the BentoML API server:
+- `make load_data`: downloads the raw data
+- `make prepare_data`: prepares the data for training
+- `make train_model`: trains the machine learning model
+- `make start_api`: starts the BentoML API server (use a separate terminal)
 
 
+## 🧪 Testing
+
+Run `python tests/test_request.py` to test the API endpoints.
