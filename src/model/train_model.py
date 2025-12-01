@@ -22,7 +22,7 @@ def train_random_forest_model(processed_data_path: str, model_output_path: str, 
     y_train_path = path.join(processed_data_path, 'y_train.csv')
     X_test_path = path.join(processed_data_path, 'X_test.csv')
     y_test_path = path.join(processed_data_path, 'y_test.csv')
-    model = RandomForestRegressor(n_estimators=100, criterion='friedman_mse', n_jobs=-1, random_state=42)
+    model = RandomForestRegressor(n_estimators=100, n_jobs=-1, criterion='friedman_mse', random_state=42)
  
     if path.exists(X_train_path) and path.exists(y_train_path):
         X_train = pd.read_csv(X_train_path)

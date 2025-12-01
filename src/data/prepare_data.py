@@ -16,6 +16,10 @@ def prepare_data(raw_file: str, processed_path: str) -> None:
 
     df = pd.read_csv(raw_file)
 
+    # Drop serial number column
+    if 'Serial No.' in df.columns:
+        df.drop('Serial No.', axis=1, inplace=True)
+
     # Handle missing values
     df.fillna(df.median(), inplace=True)
 
