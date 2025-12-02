@@ -33,4 +33,7 @@ Use the Makefile to prepare data, train the model, and start the BentoML API ser
 
 ## 🧪 Testing
 
-Run `python tests/test_request.py` to test the API endpoints.
+Run the test request script to test the API endpoints:
+````
+make test
+````

@@ -14,3 +14,7 @@ start_api:
 	@echo "⏳ Starting BentoML API server..."
 	@bentoml serve src.service:UniversityAdmissionService
 	@echo "✅ BentoML API server started."
+test:
+	@echo "⏳ Running unit tests..."
+	@pytest tests/ -v
+	@echo "✅ Tests complete."
