@@ -1,0 +1,23 @@
+service: 'src.service:UniversityAdmissionService'
+description: 'BentoML service for predicting university admission chances (using a random forest model).'
+labels:
+  project: 'bentoml_university_score'
+  owner: 'fabianhofmann'
+
+include:
+  - src/
+  - data/
+
+models:
+  - 'university_admission_rf_model'
+
+python:
+  packages:
+    - "bentoml>=1.4.30"
+    - "joblib>=1.5.2"
+    - "pandas>=2.3.3"
+    - "pydantic>=2.12.5"
+    - "pyjwt>=2.10.1"
+    - "requests>=2.32.5"
+    - "scikit-learn>=1.7.2"
+    - "starlette>=0.50.0"

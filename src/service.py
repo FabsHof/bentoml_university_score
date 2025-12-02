@@ -32,7 +32,7 @@ class UniversityAdmissionService:
             token = create_jwt_token(username)
             return {'token': token}
         else:
-            raise bentoml.exceptions.Unauthorized('Invalid credentials')
+            return JSONResponse(status_code=401, content={'message': 'Invalid credentials'})
 
     @bentoml.api
     def predict(self, input_data: InputModel) -> dict:
